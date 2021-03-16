@@ -25,3 +25,13 @@ for (let i = 0; i < words.length; i++) {
 }
 
 words.join(" ");
+
+// But Codewars wants it in a different so
+
+String.prototype.toJadenCase = function () {
+    const words = this.split(" ");
+    for(i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+   return words.join(" ");
+};
