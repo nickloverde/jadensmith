@@ -17,3 +17,11 @@
 // Then, I want to join the string back together again and return the new string
 
 
+const mySentence = "Fresh Prince is the greatest show ever";
+const words = mySentence.split(" ");
+
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+}
+
+words.join(" ");
